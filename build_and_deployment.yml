@@ -9,20 +9,10 @@
       name: default-jdk
       update_cache: yes
 
-  - name: Install "default-jdk" package
-    apt:
-      name: default-jdk
-      state: present
-
   - name: Update repositories cache and install "maven" package
     apt:
       name: maven
       update_cache: yes
-
-  - name: Install "maven" package
-    apt:
-      name: maven
-      state: present
 
 
 # - name: install tomcat
