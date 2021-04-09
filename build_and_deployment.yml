@@ -15,6 +15,12 @@
       update_cache: yes
 
 
-# - name: install tomcat
-#   hosts: web-production
-#   become: yes
+- name: install tomcat
+  hosts: web-production
+  become: yes
+
+  tasks:
+  - name: Update repositories cache and install "tomcat9" package
+    apt:
+      name: tomcat9
+      update_cache: yes
