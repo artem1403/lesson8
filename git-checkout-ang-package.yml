@@ -34,3 +34,9 @@
     copy:
       src: /usr/bin/boxfuse/hello-1.0.war
       dest: /usr/local/tomcat/webapps/
+      mode: u+rw,g+rwx,o+rwx
+
+  - name: Ensure tomcat service is restarted
+    apt:
+      name: tomcat9
+      state: restarted
