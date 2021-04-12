@@ -4,7 +4,7 @@
 
 ## Памятка по командам
 ```bash
-ansible-playbook build_and_deployment.yml
+ansible-playbook build_and_deployment.yml -i ./hosts
 ```
 
 ## TODO
