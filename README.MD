@@ -3,9 +3,18 @@
 
 
 ## Памятка по командам
+### Линтеры
+```bash
+apt install yamllint ansible-lint
+yamllint git-checkout-ang-package.yml
+ansible-lint git-checkout-ang-package.yml
+```
+### Запуск
 ```bash
 ansible-playbook build_and_deployment.yml -i ./hosts
+ansible-playbook git-checkout-ang-package.yml -i ./hosts
 ```
+
 
 ## TODO
 * [ ] Можно ли файл `hosts` положить рядом в проект? Будет ли он браться в приоритете над файлом `/etc/ansible/hosts`?
