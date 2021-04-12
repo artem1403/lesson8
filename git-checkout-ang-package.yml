@@ -37,6 +37,6 @@
       mode: u+rw,g+rwx,o+rwx
 
   - name: Ensure tomcat service is restarted
-    apt:
+    service:
       name: tomcat9
       state: restarted
