@@ -24,3 +24,12 @@
       src: /usr/src/boxfuse/target/hello-1.0.war
       dest: /usr/bin/boxfuse/
       flat: yes
+
+- name: deploying app to production servers
+  hosts: web-production
+  become: no
+
+  tasks:
+  - name: copying .war-file to web-production servers
+      src: /usr/bin/boxfuse/hello-1.0.war
+      dest: /usr/local/tomcat/webapps/
