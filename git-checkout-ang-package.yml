@@ -7,5 +7,5 @@
   - name: git clone project
     git:
       repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
-      dest: /usr/src/
+      dest: /usr/src/boxfuse
       clone: yes
