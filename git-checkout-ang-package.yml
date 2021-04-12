@@ -22,5 +22,5 @@
   - name: get .war-file from bulid-machine to master-machine
     fetch:
       src: /usr/src/boxfuse/target/hello-1.0.war
-      dest: /usr/bin/boxfuse
+      dest: /usr/bin/boxfuse/
       flat: yes
