@@ -1,0 +1,10 @@
+---
+- name: clone and package project "boxfuse-sample-java-war-hello"
+  hosts: build
+  become: no
+
+  tasks:
+  - name: git clone project
+    ansible.builtin.git:
+      repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+      dest: /usr/src/
