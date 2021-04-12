@@ -17,7 +17,7 @@
 
   - name: "mvn clean task output"
     debug:
-     var: mvn_result
+      var: mvn_result
 
   - name: get .war-file from bulid-machine to master-machine
     fetch:
@@ -31,5 +31,5 @@
 
   tasks:
   - name: copying .war-file to web-production servers
-      src: /usr/bin/boxfuse/hello-1.0.war
-      dest: /usr/local/tomcat/webapps/
+    src: /usr/bin/boxfuse/hello-1.0.war
+    dest: /usr/local/tomcat/webapps/
