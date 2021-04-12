@@ -2,6 +2,8 @@
 Написать playbook, который подготавливает сборочное и продовое окружение на двух нодах. На сборочной ноде производится сборка проекта, на продовой - запуск.
 
 
+
+
 ## Памятка по командам
 ### Линтеры
 ```bash
@@ -12,7 +14,6 @@ ansible-lint git-checkout-ang-package.yml
 ### Запуск
 ```bash
 ansible-playbook build_and_deployment.yml -i ./hosts
-ansible-playbook git-checkout-ang-package.yml -i ./hosts
 ```
 
 
