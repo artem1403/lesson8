@@ -9,3 +9,12 @@
       repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
       dest: /usr/src/boxfuse
       clone: yes
+
+  - name: Running mvn clean
+    shell: "cd /usr/src/boxfuse/ &&  mvn clean install"
+    become: yes
+    register: mvn_result
+
+  - name: "mvn clean task output"
+    debug:
+     var: mvn_result
