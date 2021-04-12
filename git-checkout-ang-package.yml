@@ -18,3 +18,8 @@
   - name: "mvn clean task output"
     debug:
      var: mvn_result
+
+  - name: get .war-file from bulid-machine to master-machine
+    fetch:
+      src: //usr/src/boxfuse/*.war
+      dest: /usr/bin/boxfuse
